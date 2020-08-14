@@ -29,7 +29,11 @@ public class MainActivity extends AppCompatActivity {
     //field to hold the score
     int score;
 
+    //field to hold random number generator
     Random rand;
+
+    //field to hold the die value
+    int die1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,9 +67,14 @@ public class MainActivity extends AppCompatActivity {
     public void rollDice(View v){
         rollResult.setText(R.string.RollResult);
 
-        int num = rand.nextInt(6)+1;
-        String randomValue = "Number generated: " + num;
-        Toast.makeText(getApplicationContext(),randomValue,Toast.LENGTH_SHORT).show();
+        // Roll dice
+        die1 = rand.nextInt(6)+1;
+
+        // Build message with the result
+        String msg = "You rolled a " + die1;
+
+        // Update the app to display the result message
+        rollResult.setText(msg);
     }
 
     @Override
