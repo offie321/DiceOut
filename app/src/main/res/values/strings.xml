@@ -11,4 +11,7 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="roll">Roll!</string>
     <string name="RollResult">Clicked!</string>
+    <string name="imagedie1">ImageDie1</string>
+    <string name="imagedie2">ImageDie2</string>
+    <string name="imagedie3">ImageDie3</string>
 </resources>
