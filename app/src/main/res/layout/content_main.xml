@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
@@ -10,18 +11,8 @@
         android:id="@+id/rollResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_first_fragment" />
-
-    <Button
-        android:id="@+id/rollButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/die2Image"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:onClick="rollDice"
-        android:text="@string/roll" />
-
+        android:text="@string/hello_first_fragment"
+        android:textColor="@android:color/white" />
 
 
     <androidx.fragment.app.FragmentContainerView
@@ -37,8 +28,8 @@
         android:layout_below="@id/rollResult"
         android:layout_alignParentStart="true"
         android:layout_marginTop="25dp"
-        android:src="@drawable/die_1"
-        android:contentDescription="@string/imagedie1" />
+        android:contentDescription="@string/imagedie1"
+        android:src="@drawable/die_1" />
 
     <ImageView
         android:id="@+id/die2Image"
@@ -47,8 +38,8 @@
         android:layout_below="@id/rollResult"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:src="@drawable/die_1"
-        android:contentDescription="@string/imagedie2" />
+        android:contentDescription="@string/imagedie2"
+        android:src="@drawable/die_1" />
 
     <ImageView
         android:id="@+id/die3Image"
@@ -57,8 +48,8 @@
         android:layout_below="@id/rollResult"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="25dp"
-        android:src="@drawable/die_1"
-        android:contentDescription="@string/imagedie3" />
+        android:contentDescription="@string/imagedie3"
+        android:src="@drawable/die_1" />
 
     <TextView
         android:id="@+id/scoreText"
@@ -68,7 +59,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
         android:text="Score: 0"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white" />
 
 
 </RelativeLayout>

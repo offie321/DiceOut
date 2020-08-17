@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
     //field to hold the roll result text.
     TextView rollResult;
 
-    //field to hold the roll button
-    Button rollButton;
 
     //field to hold the score
     int score;
@@ -62,8 +60,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                rollDice(view);
             }
         });
 
@@ -71,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         score = 0;
 
         rollResult = findViewById(R.id.rollResult);
-        rollButton = findViewById(R.id.rollButton);
         scoreText = (TextView) findViewById(R.id.scoreText);
 
         //create greeting
