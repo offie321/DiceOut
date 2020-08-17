@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
     int die2;
     int die3;
 
+    // Field to hold the score text
+    TextView scoreText;
+
     // ArrayList to hold all three dice values
     ArrayList<Integer> dice;
 
@@ -69,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
         rollResult = findViewById(R.id.rollResult);
         rollButton = findViewById(R.id.rollButton);
+        scoreText = (TextView) findViewById(R.id.scoreText);
 
         //create greeting
         Toast.makeText(getApplicationContext(), "Welcome to DiceOut!", Toast.LENGTH_SHORT).show();
